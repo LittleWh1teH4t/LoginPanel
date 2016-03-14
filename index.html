@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>KASLAB Admin Panel login</title>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="css/style.css">    
+	<link rel='stylesheet prefetch' href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+	<link rel='stylesheet prefetch' href='//fonts.googleapis.com/css?family=Montserrat:400,700'>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<section class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+            <div class="account-wall">
+                <div id="my-tab-content" class="tab-content">
+						<div class="tab-pane active" id="login">
+               		    <img class="profile-img" src="https://lh3.googleusercontent.com/proxy/INaGAY3N5tWQu4Gx9pAurqu02KEOqy5Pf_sxpuOQined3ykkU__wJz-vhfdPSgZUeRsesvzUrUDqO295w14wNGJkq5gZ3MVDqc84fTiy64Tg=s426" alt="">
+               			<form class="form-signin" action="" method="">
+               				<input type="text" class="form-control" placeholder="Username" required autofocus>
+               				<input type="password" class="form-control last" placeholder="Password" required>
+                            <span class="no-padding col-lg-6 col-md-6 col-sm-6">
+                            	<label class="custom-input" for="remember-me" style="font-weight:100">
+                                <input type="checkbox" name="" checked="checked" id="remember-me" class="" />
+                                <span>&nbsp;</span> Remeber Me</label> 
+                            </span>
+                            <span class="no-padding col-lg-6 col-md-6  col-sm-6 text-right">
+                            	<a href="#forgot" data-toggle="tab">Forgot Password</a>
+                            </span>
+               				<input type="submit" class="btn btn-lg btn-saffron btn-block" value="Login" />
+               			</form>
+               			<div id="tabs" data-tabs="tabs">
+               				<p class="col-lg-6 col-md-6 col-sm-6 text-center"><a href="#quotee" data-toggle="tab"><i class="fa fa-edit"></i>&nbsp;Write a Quote</a></p>
+               				<p class="col-lg-6 col-md-6 col-sm-6 text-center"><a href="http://kaslab.in" target="_blank"><i class="fa fa-envelope"></i>&nbsp;Conatct Us</a></p>
+              			</div>
+                        <p>&nbsp;</p>
+						</div>
+						<div class="tab-pane" id="quotee">               		    
+							<form class="form-signin" action="" method="">
+                            	<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 text-center">
+                                <label for="company" class="btn custom-input no-padding line col-xs-6 col-sm-6 text-center">
+                                    <img class="profile-img no-margin" src="https://lh3.googleusercontent.com/proxy/INaGAY3N5tWQu4Gx9pAurqu02KEOqy5Pf_sxpuOQined3ykkU__wJz-vhfdPSgZUeRsesvzUrUDqO295w14wNGJkq5gZ3MVDqc84fTiy64Tg=s426" alt="">
+                                    <div style="no-padding no-margin">
+                                    <input type="radio" id="company" value="company" checked="checked" name="whome_" />
+                                    <span>&nbsp;</span>
+                                    </div>
+                                </label>
+                                <label for="client" class="btn custom-input no-padding line col-xs-6 col-sm-6 text-center">
+                                    <img class="profile-img no-margin" src="http://gotsolutions.co.in/assests/images/got_solutions_logo.png" alt="">
+                                   	<input type="radio" id="client" value="client" name="whome_" />
+                                    <span>&nbsp;</span>
+                                </label>
+                                </div>
+                                <div>                                
+                                <!----- form -submittion----->
+								<input type="text" class="form-control" placeholder="Your Name ..." required autofocus>
+								<input type="text" class="form-control flat" placeholder="Email id ..." required>
+								<input type="text" class="form-control flat" placeholder="Contact ..." required>
+								<textarea class="form-control last" placeholder="Message ..."></textarea>
+                                <p class="no-margin text-right">114</p>
+								<input type="submit" class="btn btn-lg btn-saffron btn-block" value="Send" />
+                                </div>
+							</form>
+							<div id="tabs" data-tabs="tabs">
+                            <p class="text-center"><a href="#login" data-toggle="tab"><i class="fa fa-hand-o-left"></i>&nbsp;Back to Login</a></p>
+                            </div>
+						</div>
+						<div class="tab-pane" id="forgot">
+							<img class="profile-img" src="https://lh3.googleusercontent.com/proxy/INaGAY3N5tWQu4Gx9pAurqu02KEOqy5Pf_sxpuOQined3ykkU__wJz-vhfdPSgZUeRsesvzUrUDqO295w14wNGJkq5gZ3MVDqc84fTiy64Tg=s426" alt="">
+							<form class="form-signin" action="" method="">
+								<input type="hidden" class="form-control" value="User Name">
+								<input type="text" class="form-control" placeholder="Email id" autofocus required>
+                                <p>&nbsp;</p>
+								<input type="submit" class="btn btn-lg btn-info btn-block" value="Submit" />
+							</form>
+							<p class="text-center"><a href="#login" data-toggle="tab"><i class="fa fa-hand-o-left"></i>&nbsp;Back to Login</a></p></a></p>
+						</div>
+						<div class="tab-pane" id="reset_password">
+							<img class="profile-img" src="https://lh3.googleusercontent.com/proxy/INaGAY3N5tWQu4Gx9pAurqu02KEOqy5Pf_sxpuOQined3ykkU__wJz-vhfdPSgZUeRsesvzUrUDqO295w14wNGJkq5gZ3MVDqc84fTiy64Tg=s426" alt="">
+							<form class="form-signin" action="" method="">
+								<input type="password" class="form-control first no-margin" placeholder="Password" autofocus required>
+								<input type="password" class="form-control last" placeholder="Password again" required>
+                                <p>&nbsp;</p>
+								<input type="submit" class="btn btn-lg btn-warning btn-block" value="Reset Password" />
+							</form>
+							<p class="text-center"><a href="#login" data-toggle="tab"><i class="fa fa-hand-o-left"></i>&nbsp;Back to Login</a></p></a></p>
+						</div>
+					</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- jQuery UI 1.11.4 -->
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script src="js/index.js"></script>
+</body>
+</html>
